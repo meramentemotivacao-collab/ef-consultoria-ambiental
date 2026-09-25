@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#062d20">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Eduardo Ambiental">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<meta name="description" content="Eduardo Ferreira Jr. - Consultoria Ambiental. Licenciamento ambiental, PGRS, recursos hídricos, projetos e gestão ambiental.">
+<title>EF Consultoria Ambienta</title>
+<style>
+:root{--gold:#f5c400;--gold2:#dca900;--green:#062d20;--green2:#0b4934;--cream:#f8f5e9;--text:#26342e;--muted:#66736d;--white:#fff;--shadow:0 15px 40px rgba(3,35,25,.13)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);line-height:1.6;background:#fff}a{text-decoration:none;color:inherit}.container{width:min(1140px,92%);margin:auto}
+header{position:fixed; padding-top:env(safe-area-inset-top);z-index:50;top:0;left:0;right:0;background:rgba(4,35,25,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(245,196,0,.18)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800}.brand img{width:52px;height:52px;object-fit:cover;object-position:center;border-radius:50%;border:2px solid var(--gold)}.brand span{line-height:1.15}.brand small{display:block;color:var(--gold);font-size:.65rem;letter-spacing:.16em;margin-top:4px}.menu{display:flex;align-items:center;gap:26px;color:#fff;font-size:.92rem;font-weight:650}.menu a:hover{color:var(--gold)}.menu .quote{color:var(--green);background:var(--gold);padding:11px 17px;border-radius:999px}.hamb{display:none;color:#fff;background:none;border:0;font-size:28px}
+.hero{min-height:720px;padding:160px 0 100px;background:radial-gradient(circle at 80% 25%,rgba(245,196,0,.18),transparent 30%),linear-gradient(135deg,#031f16,#0b4934 62%,#05291d);color:#fff;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:55px}.eyebrow{color:var(--gold);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px}.hero h1{font-family:Georgia,serif;font-size:clamp(2.8rem,5.5vw,5.1rem);line-height:1.02;margin-bottom:22px}.hero h1 span{color:var(--gold)}.hero p{font-size:1.12rem;color:#dbe8e1;max-width:690px;margin-bottom:30px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;justify-content:center;align-items:center;padding:14px 21px;border-radius:9px;font-weight:800;border:1px solid var(--gold)}.btn.gold{background:var(--gold);color:#062d20}.btn.outline{color:#fff;background:transparent}.btn:hover{transform:translateY(-2px)}.hero-logo{display:flex;justify-content:center}.hero-logo img{width:min(430px,100%);border-radius:28px;box-shadow:0 25px 70px rgba(0,0,0,.35);border:1px solid rgba(245,196,0,.35)}
+section{padding:92px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 45px}.section-head h2{font-family:Georgia,serif;color:var(--green);font-size:2.45rem;margin-bottom:10px}.section-head p{color:var(--muted)}.services{background:var(--cream)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid #e7e3d5;border-radius:18px;padding:28px;box-shadow:0 7px 25px rgba(7,44,31,.06);transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.icon{width:50px;height:50px;display:grid;place-items:center;border-radius:14px;background:#eef5e9;color:var(--green);font-size:24px;margin-bottom:17px}.card h3{color:var(--green);margin-bottom:8px}.card p{color:var(--muted);font-size:.95rem}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.about-visual{background:var(--green);padding:18px;border-radius:26px;box-shadow:var(--shadow)}.about-visual img{display:block;width:100%;border-radius:16px}.about-text h2{font-family:Georgia,serif;font-size:2.45rem;color:var(--green);margin-bottom:14px}.checks{list-style:none;margin-top:22px;display:grid;gap:11px}.checks li:before{content:"✓";color:var(--gold2);font-weight:900;margin-right:10px}
+.process{background:#f7faf8}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{background:#fff;padding:25px;border-radius:16px;border:1px solid #e5ece7}.num{font-size:2.1rem;font-weight:900;color:var(--gold2);font-family:Georgia,serif}
+.contact{background:linear-gradient(135deg,#041f16,#0b4934);color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px}.contact h2{font-family:Georgia,serif;font-size:2.55rem;margin-bottom:14px}.contact p{color:#dbe8e1}.contact-info{margin-top:25px;display:grid;gap:10px}.form{background:#fff;color:var(--text);padding:28px;border-radius:20px;box-shadow:var(--shadow)}.field{margin-bottom:14px}.field label{display:block;font-weight:750;font-size:.85rem;margin-bottom:5px}.field input,.field textarea,.field select{width:100%;padding:12px 13px;border:1px solid #dbe5df;border-radius:9px;font:inherit}.field textarea{min-height:110px;resize:vertical}.form button{width:100%;cursor:pointer}
+footer{background:#02170f;color:#cbdad3;padding:28px 0}.footer{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:.9rem}.goldline{height:3px;background:var(--gold)}
+.whatsapp{position:fixed;right:22px;bottom:calc(22px + env(safe-area-inset-bottom));z-index:60;width:59px;height:59px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:27px;box-shadow:0 9px 28px rgba(0,0,0,.25)}.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,130px);background:#062d20;color:#fff;padding:14px 20px;border-radius:10px;z-index:70;transition:.3s}.toast.show{transform:translate(-50%,0)}
+@media(max-width:850px){.menu{display:none;position:absolute;top:82px;left:0;right:0;background:#062d20;padding:20px;flex-direction:column;align-items:stretch}.menu.open{display:flex}.menu .quote{text-align:center}.hamb{display:block}.hero-grid,.about,.contact-grid{grid-template-columns:1fr}.hero-logo{order:-1}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.grid,.steps{grid-template-columns:1fr}.hero{padding-top:135px}.hero h1{font-size:2.9rem}.brand span{font-size:.88rem}.brand small{font-size:.55rem}.footer{flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="#inicio"><img src="logo.jpg" alt="Logo Eduardo Ferreira Jr."><span>EDUARDO FERREIRA JR.<small>CONSULTORIA AMBIENTAL</small></span></a>
+<nav class="menu" id="menu"><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#empresa">Sobre</a><a href="#processo">Como trabalhamos</a><a class="quote" href="#contato">Solicitar orçamento</a></nav>
+<button class="hamb" onclick="document.getElementById('menu').classList.toggle('open')" aria-label="Abrir menu">☰</button>
+</div>
+</header>
+
+<main>
+<section class="hero" id="inicio"><div class="container hero-grid">
+<div><div class="eyebrow">EF CONSULTORIA AMBIENTAL</div><h1>Regularização ambiental com <span>estratégia e segurança.</span></h1><p>Consultoria técnica para empresas que precisam organizar sua documentação, atender às exigências ambientais e desenvolver seus projetos com responsabilidade.</p><div class="actions"><a class="btn gold" href="#contato">Solicitar orçamento</a><a class="btn outline" href="#servicos">Conhecer serviços</a></div></div>
+<div class="hero-logo"><img src="logo.jpg" alt="Eduardo Ferreira Jr. Consultoria Ambiental"></div>
+</div></section>
+
+<section class="services" id="servicos"><div class="container"><div class="section-head"><div class="eyebrow">Soluções ambientais</div><h2>Serviços para sua empresa</h2><p>Atendimento técnico e personalizado para diferentes atividades e necessidades ambientais.</p></div>
+<div class="grid">
+<article class="card"><div class="icon">📋</div><h3>Licenciamento Ambiental</h3><p>Orientação, estudos, documentação e acompanhamento de processos de licenciamento e regularização.</p></article>
+<article class="card"><div class="icon">♻️</div><h3>PGRS</h3><p>Elaboração e implantação de Planos de Gerenciamento de Resíduos Sólidos e organização da gestão de resíduos.</p></article>
+<article class="card"><div class="icon">💧</div><h3>Outorga e Recursos Hídricos</h3><p>Projetos e documentação para regularização de captações, usos e intervenções em recursos hídricos.</p></article>
+<article class="card"><div class="icon">🌱</div><h3>Projetos Ambientais</h3><p>Diagnósticos, relatórios, programas e documentos técnicos adequados ao empreendimento.</p></article>
+<article class="card"><div class="icon">🏗️</div><h3>Construção e Atividades Produtivas</h3><p>Suporte ambiental para obras, empreendimentos, materiais de construção e outras atividades.</p></article>
+<article class="card"><div class="icon">📊</div><h3>Gestão e Conformidade</h3><p>Organização documental, indicadores, rotinas de conformidade e acompanhamento de obrigações.</p></article>
+</div></div></section>
+
+<section id="empresa"><div class="container about"><div class="about-visual"><img src="logo.jpg" alt="Marca Eduardo Ferreira Jr. Consultoria Ambiental"></div><div class="about-text"><div class="eyebrow">Sobre</div><h2>Consultoria ambiental com atendimento próximo e objetivo</h2><p>A proposta é transformar demandas ambientais complexas em etapas claras, documentação organizada e acompanhamento técnico durante o projeto.</p><ul class="checks"><li>Atendimento personalizado por atividade</li><li>Planejamento documental e técnico</li><li>Acompanhamento de prazos e exigências</li><li>Comunicação clara com o cliente</li></ul></div></div></section>
+
+<section class="process" id="processo"><div class="container"><div class="section-head"><div class="eyebrow">Metodologia</div><h2>Do diagnóstico ao acompanhamento</h2></div><div class="steps">
+<div class="step"><div class="num">01</div><h3>Diagnóstico</h3><p>Entendemos a atividade, localização e situação documental.</p></div>
+<div class="step"><div class="num">02</div><h3>Planejamento</h3><p>Definimos documentos, estudos, prazos e responsabilidades.</p></div>
+<div class="step"><div class="num">03</div><h3>Execução</h3><p>Elaboramos os documentos e conduzimos as etapas técnicas.</p></div>
+<div class="step"><div class="num">04</div><h3>Acompanhamento</h3><p>Acompanhamos o processo e orientamos os próximos passos.</p></div>
+</div></div></section>
+
+<section class="contact" id="contato"><div class="container contact-grid"><div><div class="eyebrow">Fale conosco</div><h2>Vamos avaliar sua demanda ambiental.</h2><p>Preencha o formulário e envie as informações básicas do seu projeto. O sistema prepara uma mensagem para atendimento pelo WhatsApp.</p><div class="contact-info"><p><b>Responsável:</b> Eduardo Ferreira Jr.</p><p><b>Atuação:</b> Consultoria Ambiental</p><p><b>Serviços:</b> Licenciamento • PGRS • Outorga • Projetos • Gestão Ambiental</p></div></div>
+<form class="form" id="leadForm"><div class="field"><label>Nome</label><input id="nome" required placeholder="Seu nome"></div><div class="field"><label>Empresa</label><input id="empresaInput" placeholder="Nome da empresa"></div><div class="field"><label>Serviço</label><select id="servico"><option>Licenciamento Ambiental</option><option>PGRS</option><option>Outorga / Recursos Hídricos</option><option>Projeto Ambiental</option><option>Gestão Ambiental</option><option>Outro</option></select></div><div class="field"><label>Mensagem</label><textarea id="mensagem" placeholder="Descreva sua necessidade"></textarea></div><button class="btn gold" type="submit">Enviar pelo WhatsApp</button></form>
+</div></section>
+</main>
+<div class="goldline"></div>
+<footer><div class="container footer"><span>© 2026 Eduardo Ferreira Jr. — Consultoria Ambiental</span><span>Atendimento técnico e personalizado</span></div></footer>
+<a class="whatsapp" href="https://wa.me/5533998406857" target="_blank" aria-label="WhatsApp">◉</a>
+<div class="toast" id="toast">Preparando sua mensagem…</div>
+<script>
+const form=document.getElementById('leadForm');
+form.addEventListener('submit',e=>{
+ e.preventDefault();
+ const nome=document.getElementById('nome').value.trim(), empresa=document.getElementById('empresaInput').value.trim();
+ const servico=document.getElementById('servico').value, msg=document.getElementById('mensagem').value.trim();
+ const text=`Olá! Meu nome é ${nome}${empresa?` e falo pela empresa ${empresa}`:''}. Tenho interesse em ${servico}.${msg?` Detalhes: ${msg}`:''}`;
+ document.getElementById('toast').classList.add('show');
+ setTimeout(()=>{window.open('https://wa.me/5533998406857?text='+encodeURIComponent(text),'_blank');document.getElementById('toast').classList.remove('show')},700);
+});
+document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+if ('serviceWorker' in navigator) { window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {})); }
+</script>
+
+    <a class="instagram-fixed" href="https://www.instagram.com/ef_consultoriambiental/" target="_blank" rel="noopener noreferrer"
+       aria-label="Instagram">Instagram</a>
+    
+</body>
+</html>
